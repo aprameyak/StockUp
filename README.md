@@ -1,1 +1,1 @@
-
+Pantry App that models an inventory management system with CRUD functions to add or delete items and update the quantity of items in a pantry. Used Firebase as backend and javascript for the front end and api.

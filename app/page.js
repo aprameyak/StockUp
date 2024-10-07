@@ -113,9 +113,9 @@ export default function Home() {
       alignItems="center"
       gap={2}
     >
-      <Box>
+      <Typography variant="h2" color="#333">
         Kitchen Pantry
-      </Box>
+      </Typography>
       <Modal open={open} onClose={handleClose}>
         <Box
           position="absolute"

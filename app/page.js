@@ -113,7 +113,7 @@ export default function Home() {
       alignItems="center"
       gap={2}
     >
-      <Typography variant="h2" color="#ebd9fc">
+      <Typography variant="h2" color="#b905fa">
         Kitchen Pantry
       </Typography>
       <Modal open={open} onClose={handleClose}>

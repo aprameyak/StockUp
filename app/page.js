@@ -113,6 +113,9 @@ export default function Home() {
       alignItems="center"
       gap={2}
     >
+      <Box>
+        Kitchen Pantry
+      </Box>
       <Modal open={open} onClose={handleClose}>
         <Box
           position="absolute"

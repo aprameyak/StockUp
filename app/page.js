@@ -116,8 +116,6 @@ export default function Home() {
       <Typography variant="h2" color="#ebd9fc">
         Kitchen Pantry
       </Typography>
-      <br>
-      <br>
       <Modal open={open} onClose={handleClose}>
         <Box
           position="absolute"

@@ -9,6 +9,6 @@ Features
 * RESTful API: A JavaScript-based API handles backend logic and facilitates communication between the frontend and database.
 
 Technology Stack
-* Frontend: JavaScript, HTML, CSS
+* Frontend: JavaScript, HTML5, CSS3
 * Backend: JavaScript RESTful API
 * Database: Firebase Firestore NoSQL (Google Cloud Platform)

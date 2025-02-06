@@ -1,6 +1,6 @@
 # Kitchen Pantry App
 
-The Kitchen Pantry App is a functional and user-friendly interface that allows users to efficiently manage their pantry inventory. With this app, users can perform CRUD (Create, Read, Update, Delete) operations to add, remove, or update food items and their quantities. Real-time updates ensure a seamless experience, making it easy to keep track of pantry stock.
+The Kitchen Pantry App is a functional and user-friendly interface that allows users to efficiently manage their pantry inventory. Users can perform CRUD (Create, Read, Update, Delete) operations to add, remove, or update food items and their quantities. Real-time updates ensure a seamless experience, making it easy to keep track of pantry stock.
 
 Features
 * CRUD Functionality: Add, remove, and modify pantry items with ease.

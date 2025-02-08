@@ -12,3 +12,6 @@ Technology Stack
 * Frontend: JavaScript, HTML5, CSS3
 * Backend: JavaScript RESTful API
 * Database: Firebase Firestore NoSQL (Google Cloud Platform)
+
+Live Deployment
+* View Here: https://pantryapp-iota.vercel.app/

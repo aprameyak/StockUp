@@ -20,28 +20,33 @@ import {
   deleteDoc,
 } from "firebase/firestore";
 
-export default function Home() {
-  const [inventory, setInventory] = useState([]);
-  const [open, setOpen] = useState(false);
-  const [itemName, setItemName] = useState("");
-  const [isSearchBarVisible, setIsSearchBarVisible] = useState(false);
-  const [searchTerm, setSearchTerm] = useState("");
+interface InventoryItem {
+  name: string;
+  quantity: number;
+}
 
-  const updateInventory = async () => {
+export default function Home() {
+  const [inventory, setInventory] = useState<InventoryItem[]>([]);
+  const [open, setOpen] = useState<boolean>(false);
+  const [itemName, setItemName] = useState<string>("");
+  const [isSearchBarVisible, setIsSearchBarVisible] = useState<boolean>(false);
+  const [searchTerm, setSearchTerm] = useState<string>("");
+
+  const updateInventory = async (): Promise<void> => {
     const snapshot = query(collection(firestore, "inventory"));
     const docs = await getDocs(snapshot);
-    const inventoryList = [];
+    const inventoryList: InventoryItem[] = [];
     docs.forEach((doc) => {
       inventoryList.push({
         name: doc.id,
         ...doc.data(),
-      });
+      } as InventoryItem);
     });
     setInventory(inventoryList);
   };
 
   // Add the item
-  const addItem = async (item) => {
+  const addItem = async (item: string): Promise<void> => {
     const docRef = doc(collection(firestore, "inventory"), item);
     const docSnap = await getDoc(docRef);
 
@@ -59,7 +64,7 @@ export default function Home() {
   };
 
   // Remove the item
-  const removeItem = async (item) => {
+  const removeItem = async (item: string): Promise<void> => {
     const docRef = doc(collection(firestore, "inventory"), item);
     const docSnap = await getDoc(docRef);
 
@@ -77,8 +82,8 @@ export default function Home() {
   };
 
   // Handle photo input
-  const handlePhotoInput = (event) => {
-    const file = event.target.files[0];
+  const handlePhotoInput = (event: React.ChangeEvent<HTMLInputElement>): void => {
+    const file = event.target.files?.[0];
     if (file) {
       const itemName = prompt("Enter the name of the item:");
       if (itemName) {
@@ -91,11 +96,11 @@ export default function Home() {
     updateInventory();
   }, []);
 
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-  const handleSearchToggle = () => setIsSearchBarVisible(!isSearchBarVisible);
+  const handleOpen = (): void => setOpen(true);
+  const handleClose = (): void => setOpen(false);
+  const handleSearchToggle = (): void => setIsSearchBarVisible(!isSearchBarVisible);
 
-  const handleSearch = (e) => {
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>): void => {
     setSearchTerm(e.target.value);
   };
 

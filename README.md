@@ -1,24 +1,29 @@
-# **Kitchen Pantry App**
+# StockUp
 
-The Kitchen Pantry App is a functional and user-friendly interface that allows users to efficiently manage their pantry inventory. Users can perform CRUD (Create, Read, Update, Delete) operations to add, remove, or update food items and their quantities. Real-time updates ensure a seamless experience, making it easy to keep track of pantry stock.
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white&style=for-the-badge)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB&style=for-the-badge)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black&style=for-the-badge)
+![MUI](https://img.shields.io/badge/MUI-007FFF?logo=mui&logoColor=white&style=for-the-badge)
 
-![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Firebase Badge](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Vercel Badge](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+## About
+
+**StockUp** is a kitchen pantry management app built with **Next.js** and **React** that lets users track food inventory in real time. It stores pantry data in **Firebase Firestore** and provides a clean **Material UI** interface for performing full CRUD operations — adding items, updating quantities, and removing entries as the pantry changes.
 
 ## Features
 
-- **CRUD Functionality**: Add, remove, and modify pantry items with ease.
-- **Real-Time Updates**: Changes to the pantry are instantly reflected in the database and user interface.
-- **Cloud-Based Storage**: Leverages Firebase's NoSQL Firestore database for secure and scalable data management.
-- **RESTful API**: A JavaScript-based API handles backend logic and facilitates communication between the frontend and database.
+- Add, update, and remove pantry items with quantity tracking
+- Real-time database sync via Firebase Firestore — changes reflect instantly in the UI
+- Material UI components for a clean, responsive layout
+- Persistent cloud storage so pantry data is available across sessions and devices
+- Vercel Analytics integrated for usage monitoring
+- Serverless deployment with no backend infrastructure to manage
 
 ## Technology Stack
 
-- **Frontend**: JavaScript, HTML5, CSS3
-- **Backend**: JavaScript RESTful API
-- **Database**: Firebase Firestore NoSQL (Google Cloud Platform)
+- **Frontend**: Next.js, React, TypeScript, Material UI (MUI)
+- **Database**: Firebase Firestore
 
-## Live Deployment
+## Deployment
 
-- **View Here**: [Kitchen Pantry App](https://pantryapp-iota.vercel.app/)
+Visit the live site at [https://pantryapp-iota.vercel.app](https://pantryapp-iota.vercel.app)

@@ -26,4 +26,4 @@
 
 ## Deployment
 
-Visit the live site at [https://pantryapp-iota.vercel.app](https://pantryapp-iota.vercel.app)
+Visit the live site at [https://stockup.aprameyakannan.com](https://stockup.aprameyakannan.com)
